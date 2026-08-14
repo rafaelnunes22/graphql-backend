@@ -1,0 +1,6 @@
+allowBuilds:
+  '@apollo/protobufjs': false
+  core-js: false
+  core-js-pure: false
+  fsevents: false
+  nodemon: false
