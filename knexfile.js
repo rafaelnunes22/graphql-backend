@@ -1,11 +1,12 @@
-// Update with your config settings.
+require("dotenv").config();
 
 module.exports = {
-  client: 'mysql',
+  client: 'mysql2',
   connection: {
-    database: 'projeto-final',
-    user:     'root',
-    password: '12345678'
+    host: process.env.APP_DB_HOST,
+    database: process.env.APP_DB_NAME,
+    user:     process.env.APP_DB_USER,
+    password: process.env.APP_DB_PASSWORD
   },
   pool: {
     min: 2,
